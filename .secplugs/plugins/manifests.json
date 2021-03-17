@@ -1,6 +1,6 @@
 [
     {
-    "name" : "NodeJS Sample Kit",
-    "description" : "A set of examples and tools written in NodeJS. A great place to start integration…"
+    "title" : "NodeJS Sample Kit",
+    "intro_text" : "A set of examples and tools written in NodeJS. A great place to start integration…"
     }
 ]
