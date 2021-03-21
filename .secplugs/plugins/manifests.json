@@ -1,6 +1,12 @@
 [
-    {
-    "name" : "NodeJS Sample Kit",
-    "description" : "A set of examples and tools written in NodeJS. A great place to start integration…"
-    }
+        {
+                "name" : "python_kit",
+                "type" : "generic",
+                "title" : "Python Sample Kit",
+                "description" : "Working and easy to use examples written in Python and ready to use",
+                "summary_html" : "@.secplugs/plugins/python_kit/summary.html",
+                "detail_html" : "@.secplugs/plugins/python_kit/detail.html",
+                "small_image" : "@.secplugs/plugins/python_kit/small_image.png",
+                "normal_image" : "@.secplugs/plugins/python_kit/normal_image.png"
+        }
 ]
