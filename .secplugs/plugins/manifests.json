@@ -3,6 +3,7 @@
                 "name" : "python_kit",
                 "type" : "generic",
                 "title" : "Python Sample Kit",
+                "created_by" : "TheStig@secplugs.com",
                 "description" : "Working and easy to use examples written in Python and ready to use",
                 "summary_html" : "@.secplugs/plugins/python_kit/summary.html",
                 "detail_html" : "@.secplugs/plugins/python_kit/detail.html",
