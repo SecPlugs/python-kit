@@ -1,14 +1,24 @@
 [
-        {
-                "name" : "python_kit",
-                "type" : "generic",
-                "title" : "Python Sample Kit",
-                "created_by" : "TheStig@secplugs.com",
-                "description" : "Working and easy to use examples written in Python and ready to use",
-                "summary_html" : "@.secplugs/plugins/python_kit/summary.html",
-                "detail_html" : "@.secplugs/plugins/python_kit/detail.html",
-                "small_image" : "@.secplugs/plugins/python_kit/small_image.png",
-                "normal_image" : "@.secplugs/plugins/python_kit/normal_image.png"
-        }
-
+  {
+    "name":"python_kit",
+    "type":"generic",
+    "title":"Python Sample Kit",
+    "created_by":"TheStig@secplugs.com",
+    "description":"Working and easy to use examples written in Python and ready to use",
+    "content":{
+      "summary":"@.secplugs/plugins/python_kit/summary.html",
+      "detail":"@.secplugs/plugins/python_kit/detail.html"
+    },
+    "images":{
+      "small":"@.secplugs/plugins/python_kit/small_image.png",
+      "normal":"@.secplugs/plugins/python_kit/normal_image.png",
+      "gallery":[
+        
+      ]
+    },
+    "links":{
+      "download":"https://github.com/SecPlugs/python-kit/wiki/Downloads",
+      "github":"https://github.com/SecPlugs/python-kit"
+    }
+  }
 ]
