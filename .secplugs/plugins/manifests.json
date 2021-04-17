@@ -4,7 +4,7 @@
     "type":"generic",
     "title":"Python Sample Kit",
     "created_by":"TheStig@secplugs.com",
-    "description":"Working and easy to use examples written in Python and ready to use",
+    "description":"Ready to use scripts, tools and examples written in Python.",
     "content":{
       "summary":"https://secplugs.github.io/python-kit/docs/summary.html",
       "detail":"https://secplugs.github.io/python-kit/docs/detail.html"
