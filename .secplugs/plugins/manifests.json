@@ -6,8 +6,8 @@
     "created_by":"TheStig@secplugs.com",
     "description":"Working and easy to use examples written in Python and ready to use",
     "content":{
-      "summary":"@.secplugs/plugins/python_kit/summary.html",
-      "detail":"@.secplugs/plugins/python_kit/detail.html"
+      "summary":"https://secplugs.github.io/python-kit/docs/summary.html",
+      "detail":"https://secplugs.github.io/python-kit/docs/detail.html"
     },
     "images":{
       "small":"@.secplugs/plugins/python_kit/small_image.png",
@@ -17,8 +17,8 @@
       ]
     },
     "links":{
-      "download":"https://github.com/SecPlugs/python-kit/wiki/Downloads",
-      "github":"https://github.com/SecPlugs/python-kit"
+      "github":"https://github.com/SecPlugs/python-kit",
+      "more_info":"https://secplugs.github.io/python-kit/docs"
     }
   }
 ]
