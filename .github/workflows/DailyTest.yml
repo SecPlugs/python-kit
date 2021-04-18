@@ -22,6 +22,5 @@ jobs:
 
       - name: Run Tests
         run: |
-          ls
-          ./build/runTests.sh
+          ./bin/runTests.sh
           
