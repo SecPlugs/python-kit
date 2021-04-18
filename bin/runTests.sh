@@ -19,4 +19,16 @@ function check_return_code_not_ok {
     fi
 }
 
+# Requires Python 3
+python3 --version
+check_return_code_ok $?
+
+# Uses Proxy
+python3 scripts/PythonFileExamplePseudoSha256.py 
+check_return_code_ok $?
+
+# Direct file upload
+python3 scripts/PythonFileExample.py 
+check_return_code_ok $?
+
 echo 'tests pass'

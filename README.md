@@ -15,5 +15,5 @@ This repository is laid out as follows..
 | ------------- |:-------------| 
 | .secplugs     | contains the meta data to import into the Secplugs portal |
 | scripts       | core scripts that use the Secplugs platform      |
-| build         | build, package and publish scripts  |
+| bin         | build, package and publish tooling  |
 
