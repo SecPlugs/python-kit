@@ -6,7 +6,7 @@
 Python examples, samples and classes to kick start python based plugins
 
 ## Usage & More Info
-See the [Python Kit GitHub Pages](https://secplugs.github.io/python-kit/docs) for usage and other information
+See the [Python Kit GitHub Pages](https://docs.secplugs.com/python-kit/docs) for usage and other information
 
 ## Repository Layout
 This repository is laid out as follows..
