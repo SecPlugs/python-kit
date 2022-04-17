@@ -6,4 +6,5 @@ layout: none
 {% include_relative _detail.md %}
 
 ## Contact
-Having trouble? [Contact Secplugs ](https://secplugs.com/contacts)
+Having trouble? [Contact {brand-name} ](https://{brand-root-domain}/contacts)
+
