@@ -43,6 +43,7 @@ class Secplugs(object):
 
     @property
     def apikey(self):
+        """ return the api key """
         return self.__apikey
 
     @apikey.setter
@@ -51,41 +52,38 @@ class Secplugs(object):
 
     def is_clean(self, file_name):
         """Convenience method to check if a file is clean or malicious."""
-        fp = pathlib.PosixPath(file_name)
-        if not fp.exists():
+        file_path = pathlib.PosixPath(file_name)
+        if not file_path.exists():
             raise FileNotFoundError(f"{file_name} doesn't exist")
         result = self.scan_file(file_name)
         if ("score" in result) and ("error" not in result):
-            if result.get("score") < SECPLUGS_CLEAN_MID_SCORE:
-                return False
-            else:
+            if result.get("score") >= SECPLUGS_CLEAN_MID_SCORE:
                 return True
-        else:
-            return False
+        return False
 
     def scan_file(self, file_name):
-        """Convenience method t o trigger a file scan."""
-        fp = pathlib.PosixPath(file_name)
-        if not fp.exists():
+        """Convenience method to trigger a file scan."""
+        file_path = pathlib.PosixPath(file_name)
+        if not file_path.exists():
             raise FileNotFoundError(f"{file_name} doesn't exist")
         self.cksum = self.get_file_sha256(file_name)
         self.file_name = file_name
         response = self.quick_scan()
         # Do we need to upload the file ?
-        if response.status_code == 404:
-            upload_info = self.get_presigned_url(file_name)
-            if "error" in upload_info:
-                return "{'error': upload_info.get('msg'), 'score': -1}"
-            else:
-                upload_res = self.upload_file(upload_info)
-                result = self.quick_scan()
-                if result.ok:
-                    return result.json()
-                else:
-                    return "{'error': str(result.text), 'score': -1}"
-        else:
+        if response.status_code != 404:
             return response.json()
-        
+
+        # Yes, upload required
+        upload_info = self.get_presigned_url(file_name)
+        if "error" in upload_info:
+            return "{'error': upload_info.get('msg'), 'score': -1}"
+        self.upload_file(upload_info)
+        result = self.quick_scan()
+        if result.ok:
+            return result.json()
+        return "{'error': str(result.text), 'score': -1}"
+
+
     def get_file_sha256(self, file_path):
         """return the sha256 of a file at the specified path"""
         sha256_hash = hashlib.sha256()
@@ -112,7 +110,7 @@ class Secplugs(object):
             return response.json()
         else:
             return {"error": True, "msg": str(response.text)}
-    
+
     def upload_file(self, upload_info):
         """Upload the file to be scanned to the AWS S3 buckets."""
         response_json = upload_info

@@ -27,6 +27,10 @@ check_return_code_ok $?
 pip install secplugs-python-client
 check_return_code_ok $?
 
+# Uses pip installed class 
+python3 scripts/FileScanExample.py 
+check_return_code_ok $?
+
 # Uses Proxy
 python3 scripts/PythonFileExamplePseudoSha256.py 
 check_return_code_ok $?

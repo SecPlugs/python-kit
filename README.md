@@ -6,14 +6,6 @@
 Python examples, samples and classes to kick start python based plugins
 
 ## Usage & More Info
-See the [Python Kit GitHub Pages](https://docs.secplugs.com/python-kit/docs) for usage and other information
+See the [Python Kit Docs](https://scancloud.io/docs?plugin=plugin-secplugs-python-kit) for usage and other information
 
-## Repository Layout
-This repository is laid out as follows..
-
-| Folder        | Description |
-| ------------- |:-------------| 
-| .secplugs     | contains the meta data to import into the Secplugs portal |
-| scripts       | core scripts that use the Secplugs platform      |
-| bin         | build, package and publish tooling  |
 
