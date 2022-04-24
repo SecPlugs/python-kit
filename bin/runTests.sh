@@ -23,6 +23,10 @@ function check_return_code_not_ok {
 python3 --version
 check_return_code_ok $?
 
+# Install secplugs
+pip install secplugs-python-client
+check_return_code_ok $?
+
 # Uses Proxy
 python3 scripts/PythonFileExamplePseudoSha256.py 
 check_return_code_ok $?
