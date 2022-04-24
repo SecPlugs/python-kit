@@ -2,7 +2,7 @@
 layout: none
 ---
 
-## About
+## Python Kit
 A {brand-name} powered, pip installable Python module.
 
 The this code is open source so you can modify as you wish.
@@ -46,7 +46,7 @@ To use additional features and the privacy of your own account, after registerin
 After creating a key, the only change to the code sample above would be
 
 ```python
-file_scanner = secplugs.Secplugs("xgSg33brMe3oIh872Azge8ZzCS170m0ja6r0LNJo")
+file_scanner = secplugs.Secplugs("my-api-key")
 ```
 
 Everything else remains the same.
