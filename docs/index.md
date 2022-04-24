@@ -17,9 +17,10 @@ pip install secplugs-python-client
 You'll now have the python module installed ready to import and use in you code
 
 ## Usage
-Usage pattern is to import the secplugs library, instanciate a secplugs class and use its methods to scan objects and get the results
+Usage pattern is to import the library, instanciate a class and use its methods to scan objects and get the results
 
 ### Scan a File
+This examples illustrates usage, it uses the module to scan itself
 
 ```python
 # Import the library
@@ -37,6 +38,18 @@ def scan_self():
 # Scan this source file
 scan_self()
 ```
+
+### Use your own API Key
+
+To use additional features and the privacy of your own account, after registering with {brand-name}, sign in with your username and [create an API key](docs?doc=docs/HowTo/CreateKey) 
+
+After creating a key, the only change to the code sample above would be
+
+```python
+file_scanner = secplugs.Secplugs("xgSg33brMe3oIh872Azge8ZzCS170m0ja6r0LNJo")
+```
+
+Everything else remains the same.
 
 ## Contact
 Having trouble? [Contact {brand-name} ](https://{brand-root-domain}/contacts)
