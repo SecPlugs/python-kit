@@ -39,14 +39,14 @@ def scan_self():
 scan_self()
 ```
 
-### Use your own API Key
+### Use Your Own API Key
 
 To use additional features and the privacy of your own account, after registering with {brand-name}, sign in with your username and [create an API key](docs?doc=docs/HowTo/CreateKey) 
 
 After creating a key, the only change to the code sample above would be
 
 ```python
-file_scanner = secplugs.Secplugs("my-api-key")
+file_scanner = secplugs.Secplugs("your-api-key")
 ```
 
 Everything else remains the same.
