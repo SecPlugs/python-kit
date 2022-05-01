@@ -2,7 +2,7 @@
 layout: none
 ---
 
-## Python Kit
+# Python Kit
 A {brand-name} powered, pip installable Python module.
 
 The this code is open source so you can modify as you wish.

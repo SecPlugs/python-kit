@@ -1,6 +1,6 @@
 '''
  Title: Python Example Secplugs File Plugin
- Author: TheStig@secplugs.com
+ Author: TheStig@scancloud.io
 
  Purpose: This example submits a file (eicar if not specified) to file/quickscan
  (uploading if neccesary), waits on the report_id, and then prints out the results.
